@@ -1,25 +1,4 @@
-A device for overriding / injecting EDID information into VGA/DVI/HDMI video
-cables.
-
-Based on the idea at
-[vgaedidinjector](https://github.com/datenwolf/vgaedidinjector) but with a much
-cheaper BOM. It shares no code or design elements with the original design
-however.
-
-Uses a Silicon Labs C8051F38x processor as;
- * Has two hardware I2C interfaces (input + output).
- * Has hardware USB subsystem.
- * Runs of 5V power with no external components.
- * Has internal oscillator.
- * I/O pins are 5V compatible.
- * Has good sdcc support.
- * Costs $1.83 USD in individual quantities.
- * Is hand solderable.
-
-More info:
- * [Datasheet](http://www.silabs.com/Support%20Documents/TechnicalDocs/C8051F38x.pdf)
- * SiLab's part number: C8051F387-GQ
- * Digikey part Number: [336-2032-ND](http://www.digikey.com/product-detail/en/C8051F387-GQ/336-2032-ND/2601833)
+A simple board with edid EEPROM for HDMI video cables.
 
 # Other parts
 
@@ -46,11 +25,10 @@ More info:
 # Editing
 
 The designs in this repository was made using
-[KiCad](http://www.kicad-pcb.org/) version **4.0.4**.
+[KiCad](http://www.kicad-pcb.org/) version **4.0.7**.
 
 # License
 
-Copyright 2014 Tim "mithro" Ansell licensed under a
 Creative Commons Attribution-ShareAlike 4.0 International License.
 
 You should have received a copy of the license along with this

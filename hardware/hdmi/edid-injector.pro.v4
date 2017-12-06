@@ -1,4 +1,4 @@
-update=Sun 03 Dec 2017 12:10:48 GMT
+update=Sun 03 Dec 2017 12:10:44 GMT
 version=1
 last_client=kicad
 [cvpcb]
@@ -31,3 +31,5 @@ ModuleOutlineThickness=0.15
 [eeschema]
 version=1
 LibDir=
+[eeschema/libraries]
+LibName1=edid-injector-rescue

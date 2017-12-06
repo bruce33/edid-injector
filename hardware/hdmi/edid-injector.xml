@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/tbwa/projects/pcb/kicad/projects/edid-injector/hardware/hdmi/edid-injector.sch</source>
+    <date>Sun 03 Dec 2017 12:04:41 GMT</date>
+    <tool>Eeschema no-vcs-found-694ad93~61~ubuntu17.10.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>edid-injector.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="CSRC1">
+      <value>HDMI</value>
+      <footprint>hdmi:hdmi</footprint>
+      <libsource lib="hdmi" part="HDMI"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>540C3E12</tstamp>
+    </comp>
+    <comp ref="CSINK1">
+      <value>HDMI</value>
+      <footprint>hdmi:hdmi</footprint>
+      <libsource lib="hdmi" part="HDMI"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>540C3D1D</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>24LC08</value>
+      <footprint>SOIC-8_3.9x4.9mm_Pitch1.27mm</footprint>
+      <libsource lib="memory" part="24LC08"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2402A4</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>SCL</value>
+      <libsource lib="edid-injector-rescue" part="CONN_01X03-RESCUE-edid-injector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A240341</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>ADDR0</value>
+      <libsource lib="edid-injector-rescue" part="CONN_01X02-RESCUE-edid-injector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A240434</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>SDA</value>
+      <libsource lib="edid-injector-rescue" part="CONN_01X03-RESCUE-edid-injector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A240864</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>WP</value>
+      <libsource lib="edid-injector-rescue" part="CONN_01X02-RESCUE-edid-injector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A240FCA</tstamp>
+    </comp>
+    <comp ref="ADDR0_P1">
+      <value>10k</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2415EB</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>C_PWR</value>
+      <libsource lib="device" part="CP_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2417B3</tstamp>
+    </comp>
+    <comp ref="WP_P1">
+      <value>10k</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A241A66</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="memory" part="24LC16">
+      <aliases>
+        <alias>24LC00</alias>
+        <alias>24LC01</alias>
+        <alias>24LC02</alias>
+        <alias>24LC04</alias>
+        <alias>24LC08</alias>
+        <alias>24LC32</alias>
+        <alias>24LC64</alias>
+        <alias>24LC128</alias>
+        <alias>24LC256</alias>
+        <alias>24LC512</alias>
+        <alias>24LC1025</alias>
+      </aliases>
+      <description>I2C Serial EEPROM, 16kb</description>
+      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/21703d.pdf</docs>
+      <footprints>
+        <fp>SOIC*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">24LC16</field>
+        <field name="Footprint">Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A0" type="input"/>
+        <pin num="2" name="A1" type="input"/>
+        <pin num="3" name="A2" type="input"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="SDA" type="BiDi"/>
+        <pin num="6" name="SCL" type="input"/>
+        <pin num="7" name="WP" type="input"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="edid-injector-rescue" part="CONN_01X02-RESCUE-edid-injector">
+      <footprints>
+        <fp>Pin_Header_Straight_1X*</fp>
+        <fp>Pin_Header_Angled_1X*</fp>
+        <fp>Socket_Strip_Straight_1X*</fp>
+        <fp>Socket_Strip_Angled_1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_01X02-RESCUE-edid-injector</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="edid-injector-rescue" part="CONN_01X03-RESCUE-edid-injector">
+      <footprints>
+        <fp>Pin_Header_Straight_1X*</fp>
+        <fp>Pin_Header_Angled_1X*</fp>
+        <fp>Socket_Strip_Straight_1X*</fp>
+        <fp>Socket_Strip_Angled_1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_01X03-RESCUE-edid-injector</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="CP_Small">
+      <description>Polarised capacitor</description>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hdmi" part="HDMI">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">HDMI</field>
+      </fields>
+      <pins>
+        <pin num="1" name="D2+" type="BiDi"/>
+        <pin num="2" name="D2S" type="power_in"/>
+        <pin num="3" name="D2-" type="BiDi"/>
+        <pin num="4" name="D1+" type="BiDi"/>
+        <pin num="5" name="D1S" type="BiDi"/>
+        <pin num="6" name="D1-" type="BiDi"/>
+        <pin num="7" name="D0+" type="BiDi"/>
+        <pin num="8" name="D0S" type="BiDi"/>
+        <pin num="9" name="D0-" type="BiDi"/>
+        <pin num="10" name="CLK+" type="BiDi"/>
+        <pin num="11" name="CLKS" type="BiDi"/>
+        <pin num="12" name="CLK-" type="BiDi"/>
+        <pin num="13" name="CEC" type="BiDi"/>
+        <pin num="14" name="RES" type="passive"/>
+        <pin num="15" name="SCL" type="BiDi"/>
+        <pin num="16" name="SDA" type="BiDi"/>
+        <pin num="17" name="DDC/CEC/HEC" type="BiDi"/>
+        <pin num="18" name="+5V" type="passive"/>
+        <pin num="19" name="HPD" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="device">
+      <uri>/usr/share/kicad/library/device.lib</uri>
+    </library>
+    <library logical="edid-injector-rescue">
+      <uri>/home/tbwa/projects/pcb/kicad/projects/edid-injector/hardware/hdmi/edid-injector-rescue.lib</uri>
+    </library>
+    <library logical="hdmi">
+      <uri>/home/tbwa/projects/pcb/kicad/projects/edid-injector/hardware/hdmi/hdmi.lib</uri>
+    </library>
+    <library logical="memory">
+      <uri>/usr/share/kicad/library/memory.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(J1-Pad2)">
+      <node ref="J1" pin="2"/>
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="2" name="Net-(J2-Pad2)">
+      <node ref="U1" pin="5"/>
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="3" name="Net-(J3-Pad2)">
+      <node ref="U1" pin="7"/>
+      <node ref="J3" pin="2"/>
+      <node ref="WP_P1" pin="2"/>
+    </net>
+    <net code="4" name="Net-(ADDR0_P1-Pad1)">
+      <node ref="J4" pin="2"/>
+      <node ref="ADDR0_P1" pin="1"/>
+      <node ref="U1" pin="1"/>
+    </net>
+    <net code="5" name="/SINK_SDA">
+      <node ref="J2" pin="1"/>
+      <node ref="CSINK1" pin="16"/>
+    </net>
+    <net code="6" name="/D1+">
+      <node ref="CSRC1" pin="4"/>
+      <node ref="CSINK1" pin="4"/>
+    </net>
+    <net code="7" name="/D0+">
+      <node ref="CSINK1" pin="7"/>
+      <node ref="CSRC1" pin="7"/>
+    </net>
+    <net code="8" name="/D0-">
+      <node ref="CSINK1" pin="9"/>
+      <node ref="CSRC1" pin="9"/>
+    </net>
+    <net code="9" name="/CLK+">
+      <node ref="CSRC1" pin="10"/>
+      <node ref="CSINK1" pin="10"/>
+    </net>
+    <net code="10" name="/CLK-">
+      <node ref="CSRC1" pin="12"/>
+      <node ref="CSINK1" pin="12"/>
+    </net>
+    <net code="11" name="/SINK_CEC">
+      <node ref="CSRC1" pin="13"/>
+      <node ref="CSINK1" pin="13"/>
+    </net>
+    <net code="12" name="/SRC_SCL">
+      <node ref="CSRC1" pin="15"/>
+      <node ref="J1" pin="3"/>
+    </net>
+    <net code="13" name="/SRC_SDA">
+      <node ref="CSRC1" pin="16"/>
+      <node ref="J2" pin="3"/>
+    </net>
+    <net code="14" name="/SINK_SCL">
+      <node ref="J1" pin="1"/>
+      <node ref="CSINK1" pin="15"/>
+    </net>
+    <net code="15" name="/D1-">
+      <node ref="CSINK1" pin="6"/>
+      <node ref="CSRC1" pin="6"/>
+    </net>
+    <net code="16" name="/SINK_HPD">
+      <node ref="CSRC1" pin="19"/>
+      <node ref="CSINK1" pin="19"/>
+    </net>
+    <net code="17" name="/VHDMI">
+      <node ref="J3" pin="1"/>
+      <node ref="C1" pin="2"/>
+      <node ref="ADDR0_P1" pin="2"/>
+      <node ref="CSINK1" pin="18"/>
+      <node ref="U1" pin="8"/>
+      <node ref="CSRC1" pin="18"/>
+    </net>
+    <net code="18" name="GND">
+      <node ref="C1" pin="1"/>
+      <node ref="CSINK1" pin="11"/>
+      <node ref="J4" pin="1"/>
+      <node ref="WP_P1" pin="1"/>
+      <node ref="U1" pin="3"/>
+      <node ref="U1" pin="2"/>
+      <node ref="U1" pin="4"/>
+      <node ref="CSINK1" pin="17"/>
+      <node ref="CSINK1" pin="8"/>
+      <node ref="CSINK1" pin="5"/>
+      <node ref="CSINK1" pin="2"/>
+      <node ref="CSRC1" pin="2"/>
+      <node ref="CSRC1" pin="11"/>
+      <node ref="CSRC1" pin="8"/>
+      <node ref="CSRC1" pin="17"/>
+      <node ref="CSRC1" pin="5"/>
+    </net>
+    <net code="19" name="/D2+">
+      <node ref="CSRC1" pin="1"/>
+      <node ref="CSINK1" pin="1"/>
+    </net>
+    <net code="20" name="/D2-">
+      <node ref="CSINK1" pin="3"/>
+      <node ref="CSRC1" pin="3"/>
+    </net>
+    <net code="21" name="/RES">
+      <node ref="CSRC1" pin="14"/>
+      <node ref="CSINK1" pin="14"/>
+    </net>
+  </nets>
+</export>

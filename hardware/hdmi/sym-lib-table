@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name edid-injector-rescue)(type Legacy)(uri ${KIPRJMOD}/edid-injector-rescue.lib)(options "")(descr ""))
+  (lib (name hdmi)(type Legacy)(uri ${KIPRJMOD}/hdmi.lib)(options "")(descr ""))
+)
